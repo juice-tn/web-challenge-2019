@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    background-image:  linear-gradient(300deg, #278e31 13%,#0b6fb7 65%);
+}
+
+h1 {
+    margin: auto;
+    color:white;
+    font-size: 45px;
+}
