@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -22,6 +21,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.favourites {
+  background-color: #effff2;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 30%;
+}
+
+h2 {
+  margin-left: 20px;
+  color: #1f8a32;
 }
 
 @keyframes App-logo-spin {

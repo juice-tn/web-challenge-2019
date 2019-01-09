@@ -1,0 +1,19 @@
+.singleRow {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.columnLeft, .columnRight {
+    width: 50%;
+    text-align: left;
+}
+
+.columnLeft {
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+span {
+    margin-right: 5px;
+}
