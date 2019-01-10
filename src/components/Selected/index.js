@@ -83,7 +83,7 @@ class Selected extends React.Component {
             return row(s);
           })}
         </div>
-        {this.state.favourites.length > 1 ? <div className="favouriteWastes">
+        {this.state.favourites.length > 1 ? <div className="favourites">
           <h2>Favourites</h2>
           {this.state.favourites.map((s) => {
             return row(s, true);
