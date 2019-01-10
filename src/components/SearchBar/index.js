@@ -3,10 +3,6 @@ import './styles.css';
 import { FormControl, Button, Glyphicon } from 'react-bootstrap';
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const handleChange = this.props.handleChange;
     const applySearch = this.props.applySearch;

@@ -11,7 +11,6 @@ class App extends Component {
     this.state = {
       data,
       selectedData: [],
-      favourites: [],
       searchValue: "",
     };
     this.handleInput = this.handleInput.bind(this);
@@ -25,10 +24,12 @@ class App extends Component {
 
   handleInput(e) {
     this.setState({
-      searchValue: e.target.value,
+      // get search filter from form input. Remove whitespace from string before filtering
+      searchValue: e.target.value.replace(/\s/g, ""),
     })
   }
 
+  // apply search by either pressing Enter or pressing the search button
   applySearch() {
     this.setState({
       selectedData: this.filterData(),
@@ -36,6 +37,7 @@ class App extends Component {
   }
 
   filterData() {
+    // if empty string is provided as filter, return empty list as result
     if (!this.state.searchValue.length) {
       return [];
     }
@@ -49,11 +51,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Search handleChange={this.handleInput} applySearch={this.applySearch}/>
-        <Selected data={this.state.selectedData} />
-        <div className="favourites">
-          <h2>Favourites</h2>
-          <Selected data={this.state.favourites} />
-        </div>
+        <Selected data={this.state.selectedData} favourites={this.state.favourites} handleFavourites={this.handleFavourites} />
       </div>
     );
   }

@@ -2,11 +2,16 @@
     display: flex;
     width: 100%;
     flex-direction: row;
+    padding-bottom: 10px;
 }
 
 .columnLeft, .columnRight {
     width: 50%;
     text-align: left;
+}
+
+.columnRight {
+    padding-right: 20px;
 }
 
 .columnLeft {

@@ -28,12 +28,18 @@
   bottom: 0;
   position: fixed;
   width: 100%;
-  min-height: 30%;
+  min-height: 30vh;
+  max-height: 30vh;
+  overflow-y: scroll;
 }
 
 h2 {
   margin-left: 20px;
   color: #1f8a32;
+}
+
+ul {
+  padding-left:0;
 }
 
 @keyframes App-logo-spin {
