@@ -18,14 +18,10 @@ class App extends Component {
     this.filterData = this.filterData.bind(this);
   }
 
-  componentDidMount() {
-    console.log(this.state.data);
-  }
-
   handleInput(e) {
     this.setState({
-      // get search filter from form input. Remove whitespace from string before filtering
-      searchValue: e.target.value.replace(/\s/g, ""),
+      // get search filter from form input. Remove whitespace from beginning and end of string
+      searchValue: e.target.value.trim(),
     })
   }
 

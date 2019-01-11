@@ -8,7 +8,6 @@ class Selected extends React.Component {
     super(props);
     // use local storage to persist state of favourites + rehydrate react state
     this.state = JSON.parse(localStorage.getItem('favouriteWastes')) || { favourites: [] };
-    console.log(this.state);
     this.toggleStarColor = this.toggleStarColor.bind(this);
     this.handleFavourites = this.handleFavourites.bind(this);
     this.saveInLocalStorage = this.saveInLocalStorage.bind(this);
@@ -83,11 +82,12 @@ class Selected extends React.Component {
             return row(s);
           })}
         </div>
-        {this.state.favourites.length > 1 ? <div className="favourites">
-          <h2>Favourites</h2>
-          {this.state.favourites.map((s) => {
-            return row(s, true);
-          })}
+        {this.state.favourites.length > 1 ?
+          <div className="favourites">
+            <h2>Favourites</h2>
+            {this.state.favourites.map((s) => {
+              return row(s, true);
+            })}
         </div> : <div></div>}
       </div>
     )
