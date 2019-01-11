@@ -19,7 +19,7 @@ class Search extends React.Component {
             }
           }}
         />
-        <Button type="input" onClick={() => applySearch()}>
+        <Button className="searchButton" type="input" onClick={() => applySearch()}>
           <Glyphicon glyph="search"/>
         </Button>
       </div>

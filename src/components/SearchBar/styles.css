@@ -7,4 +7,13 @@
 
 .searchBar {
     margin-right: 10px;
+    height: 40px;
+}
+
+.searchButton {
+    background-color: #278e31;
+}
+
+.glyphicon-search:before {
+    color: white;
 }
