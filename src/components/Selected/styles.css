@@ -22,3 +22,12 @@
 span {
     margin-right: 5px;
 }
+
+.glyphicon-star {
+    font-size: 20px;
+}
+
+.glyphicon-star:hover {
+    color: grey !important;
+    cursor: pointer;
+}

@@ -18,10 +18,20 @@ class App extends Component {
     this.filterData = this.filterData.bind(this);
   }
 
+  // when app is initialized, remove capital letters from JSON data for easier searching
+  componentDidMount() {
+    this.setState({
+      data: this.state.data.map((d) => {
+        d.keywords = d.keywords.toLowerCase();
+        return d;
+      })
+    })
+  }
+
   handleInput(e) {
     this.setState({
-      // get search filter from form input. Remove whitespace from beginning and end of string
-      searchValue: e.target.value.trim(),
+      // get search filter from form input. Remove whitespace from beginning and end of string and make lowercase
+      searchValue: e.target.value.trim().toLowerCase(),
     })
   }
 

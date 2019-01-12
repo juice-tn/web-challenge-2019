@@ -64,7 +64,7 @@ class Selected extends React.Component {
         <div className="singleRow">
           <div className="columnLeft">
             {alwaysGreen ?
-              <Glyphicon glyph="star" style={{ color: 'green' }} onClick={() => this.handleFavourites(d)}/> :
+              <Glyphicon glyph="star" style={{ color: '#278e31' }} onClick={() => this.handleFavourites(d)}/> :
               <Glyphicon glyph="star" style={{ color: this.state[d.title] || 'lightgrey' }} onClick={() => this.handleFavourites(d)}/>}
             {d.title}
           </div>
