@@ -5,3 +5,9 @@
   2. `npm install` to install dependencies
   3. npm start
   4. webapp will be running on http://localhost:3000
+  
+### Design decisions
+1) Local storage is used to persist the React state of favourite lists when the browser is closed or refreshed
+2) The JSON data is parsed and all capital letters in 'keywords' section is made lower case during app initialization
+3) Whitespace is removed from search values and capital letters are converted to lower case
+4) Favourites list has absolute positioning at bottom of page, so it is always in the view regardless of search size
