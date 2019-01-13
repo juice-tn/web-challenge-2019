@@ -27,7 +27,9 @@ span {
     font-size: 20px;
 }
 
-.glyphicon-star:hover {
-    color: grey !important;
-    cursor: pointer;
+@media screen and (min-width: 736px) {
+    .glyphicon-star:hover {
+        color: grey !important;
+        cursor: pointer;
+    }
 }
