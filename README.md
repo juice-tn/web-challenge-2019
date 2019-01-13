@@ -11,3 +11,4 @@
 2) The JSON data is parsed and all capital letters in 'keywords' section is made lower case during app initialization
 3) Whitespace is removed from search values and capital letters are converted to lower case
 4) Favourites list has absolute positioning at bottom of page, so it is always in the view regardless of search size
+5) :hover styling for "star" buttons are only applied for large screen sizes, so mobile touch devices won't have hover styling
