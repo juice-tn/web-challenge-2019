@@ -22,6 +22,7 @@ class App extends Component {
   componentDidMount() {
     this.setState({
       data: this.state.data.map((d) => {
+        d.title = d.title.toLowerCase();
         d.keywords = d.keywords.toLowerCase();
         return d;
       })
@@ -48,7 +49,7 @@ class App extends Component {
       return [];
     }
     return this.state.data.filter((d) => {
-      return d.keywords.indexOf(this.state.searchValue) >= 0;
+      return (d.keywords.indexOf(this.state.searchValue) >= 0 || d.title.indexOf(this.state.searchValue) >= 0);
     })
   }
 
