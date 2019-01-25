@@ -32,7 +32,7 @@ class App extends Component {
   handleInput(e) {
     this.setState({
       // get search filter from form input. Remove whitespace from beginning and end of string and make lowercase
-      searchValue: e.target.value.trim().toLowerCase(),
+      searchValue: e.trim().toLowerCase(),
     })
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Search handleChange={this.handleInput} applySearch={this.applySearch}/>
+        <Search handleChange={this.handleInput} applySearch={this.applySearch} data={data}/>
         <Selected data={this.state.selectedData} favourites={this.state.favourites} handleFavourites={this.handleFavourites} />
       </div>
     );

@@ -10,6 +10,20 @@
     height: 40px;
 }
 
+.autosuggest {
+    width: 100%;
+}
+
+.dropdown-menu {
+    top: auto;
+    left: auto;
+    width: 80%;
+}
+
+.dropdown-menu li:last-child {
+    display: none
+}
+
 .searchButton {
     background-color: #278e31;
 }
